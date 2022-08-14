@@ -1,0 +1,15 @@
+﻿@model Category
+
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Delete Category</h2>
+			<hr />
+		</div>
+		@*<div asp-validation-summary=All></div>*@
+		<button type="submit" class="btn btn-primary" style="width:100%">Yes, delete @Model.Name</button>
+		<a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			No, Back to List
+		</a>
+	</div>
+</form>
